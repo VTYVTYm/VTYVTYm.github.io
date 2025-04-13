@@ -1,0 +1,216 @@
+:root {
+  --bg-color: #141414;
+  --card-color: #1f1f1f;
+  --accent-color: #5C7CFF;
+  --text-color: white;
+  --text-secondary: #a3a3a3;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  padding: 20px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-nav {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.nav-link {
+  color: var(--text-secondary);
+  text-decoration: none;
+  padding: 8px 15px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.nav-link.active {
+  color: var(--accent-color);
+  background: rgba(92, 124, 255, 0.1);
+}
+
+.nav-link i {
+  font-size: 0.9em;
+}
+
+.profile-card {
+  background-color: var(--card-color);
+  width: 100%;
+  max-width: 450px;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.page-title {
+  text-align: center;
+  margin: 0 0 30px 0;
+  font-size: 1.6rem;
+  color: var(--text-color);
+  border-bottom: 1px solid var(--text-secondary);
+  padding-bottom: 15px;
+}
+
+.contact-methods {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin: 30px 0;
+}
+
+.contact-btn {
+  background-color: #333;
+  color: var(--text-color);
+  text-decoration: none;
+  padding: 14px 20px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  border-left: 4px solid transparent;
+}
+
+.email-btn {
+  background-color: #1e3a8a;
+  border-left-color: #0088cc;
+}
+
+.telegram-btn {
+  background-color: #1e3a8a;
+  border-left-color: #0088cc;
+}
+
+.contact-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.email-btn:hover {
+  background-color: #2563eb;
+}
+
+.telegram-btn:hover {
+  background-color: #2563eb;
+}
+
+.contact-btn i {
+  font-size: 1.2em;
+  transition: transform 0.3s ease;
+}
+
+.contact-btn:hover i {
+  transform: scale(1.15);
+}
+
+.contact-btn span {
+  font-weight: 500;
+}
+
+.social-section {
+  margin-top: 40px;
+}
+
+.social-title {
+  text-align: center;
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  margin-bottom: 20px;
+}
+
+.social-links {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.social-link {
+  background-color: #333333;
+  color: var(--text-color);
+  text-decoration: none;
+  padding: 12px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  transition: all 0.3s ease;
+}
+
+.social-link:hover {
+  background-color: var(--accent-color);
+  transform: translateY(-2px);
+}
+
+.copyright {
+  text-align: center;
+  padding: 20px;
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  background-color: var(--bg-color);
+}
+
+.content-wrapper {
+  flex: 1;
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeIn 0.6s ease-out forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    padding: 15px;
+  }
+  
+  .main-nav {
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .nav-link {
+    padding: 8px 12px;
+    font-size: 0.9rem;
+  }
+  
+  .profile-card {
+    padding: 20px 15px;
+  }
+  
+  .contact-btn {
+    padding: 12px 15px;
+    font-size: 0.95rem;
+  }
+  
+  .social-link {
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+}
