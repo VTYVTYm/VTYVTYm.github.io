@@ -184,24 +184,10 @@ body {
   }
 }
 
-@media (max-width: 480px) {
-  body {
-    padding: 15px;
-  }
-  
-  .main-nav {
-    flex-wrap: wrap;
-    gap: 10px;
-    margin-bottom: 20px;
-  }
-  
-  .nav-link {
-    padding: 8px 12px;
-    font-size: 0.9rem;
-  }
-  
+@media (max-width: 768px) {
   .profile-card {
-    padding: 20px 15px;
+    width: 90%;
+    padding: 25px;
   }
   
   .contact-btn {
@@ -210,7 +196,70 @@ body {
   }
   
   .social-link {
-    padding: 10px;
+    padding: 10px 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .profile-card {
+    width: 95%;
+    padding: 20px 15px;
+  }
+  
+  .page-title {
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+  }
+  
+  .contact-methods {
+    margin: 20px 0;
+  }
+  
+  .contact-btn {
+    padding: 10px 12px;
+  }
+  
+  .social-title {
+    margin-bottom: 15px;
+  }
+  
+  .social-section {
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 360px) {
+  .contact-btn span, .social-link span {
     font-size: 0.9rem;
+  }
+  
+  .nav-link {
+    padding: 5px 8px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .fade-in {
+    animation: none;
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    line-height: 1.5;
+  }
+}
+
+@media (max-width: 320px) {
+  .main-nav {
+    gap: 5px;
+  }
+  
+  .nav-link {
+    padding: 5px 8px;
+    font-size: 0.8rem;
   }
 }
