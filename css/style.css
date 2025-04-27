@@ -29,7 +29,7 @@
     margin: 20px 0;
     padding: 0 20px;
   }
-  
+
   .nav-link {
     color: var(--text-secondary);
     text-decoration: none;
@@ -40,20 +40,23 @@
     gap: 8px;
     transition: all 0.3s ease;
   }
+
+  .nav-link:hover {
+    background: rgba(255, 255, 255, 0.05);
+  }
+  
   
   .nav-link.active {
     color: var(--accent-color);
     background: rgba(92, 124, 255, 0.1);
   }
   
-  /* Основной контейнер */
-  .page-container {
+    .page-container {
     display: flex;
     justify-content: flex-start;
     margin-top: 20px;
   }
-  
-  /* Секция "О себе" - теперь у самого края */
+
   .about-section {
     width: 300px;
     background-color: var(--card-color);
