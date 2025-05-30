@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,20 +13,24 @@
 </head>
 
 <body>
-  <nav class="main-nav">
-    <a href="index.html" class="nav-link">
-      <i class="fas fa-home"></i>
-      Главная
-    </a>
-    <a href="contacts.html" class="nav-link active">
-      <i class="fas fa-envelope"></i>
-      Контакты
-    </a>
+  <nav class="allnavigation">
+    <button class="navbutton" popovertarget="navigation"><i class="fa-solid fa-bars"></i></button>
+    <div class="navigation" id="navigation">
+      <a href="index.html" class="nav-link">
+        <i class="fas fa-home"></i>
+        Главная
+      </a>
+      <hr>
+      <a href="contacts.html" class="nav-link active">
+        <i class="fas fa-envelope"></i>
+        Контакты
+      </a>
+      <hr>
+    </div>
   </nav>
-
   <div class="profile-card fade-in">
     <h1 class="page-title">Мои контакты</h1>
-    
+
     <div class="contact-methods">
       <a href="mailto:vtyvtym@gmail.com" class="contact-btn email-btn">
         <i class="fas fa-envelope"></i>
@@ -58,6 +63,8 @@
   </div>
   <footer class="copyright">
     &copy; 2025 Vyacheslav Skopa. Все права защищены.
-</footer>
+  </footer>
+  <script src="/javascript/script-contacts.js"></script>
 </body>
+
 </html>
